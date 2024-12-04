@@ -1,0 +1,125 @@
+General Styles
+.white-section {
+  background-color: white;
+  padding: 0;
+  background-size: cover;
+  background-position: top left;
+}
+
+.white-section .text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem; /* Default for smaller screens */
+  max-width: 30rem;
+}
+
+.text-containerLeft span {
+  margin-right: 5rem;
+}
+
+.text-containerLeft h2 {
+  margin-right: 6rem;
+}
+
+.text-containerLeft h3 {
+  margin-right: 4rem;
+}
+
+.white-section .buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.white-section .button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.white-section .blue-section {
+  position: absolute;
+  right: 0;
+  width: 55%;
+  height: 15rem;
+  background-color: #3a3a3a;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.white-section .square-container {
+  width: 10rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.white-section .square-container:hover {
+  transform: scale(1.05); /* Slight scale */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Shadow enhancement */
+  border: 2px solid #111111; /* Add a blue border */
+}
+
+.white-section .car-image {
+  width: 75%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  margin-top: 4rem;
+}
+
+/* Responsive Styles for Screen Width 391px to 485px */
+@media (max-width: 485px) {
+  .white-section .text-container {
+    
+    max-width: 100%;
+  }
+
+  .white-section .buttons {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .white-section .blue-section {
+    position: relative;
+     
+    transform: none;
+    width: 65%;
+    margin: 0 auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0.5rem;
+    border-radius: 0;
+  }
+
+  .white-section .square-container {
+    width: 6rem;
+    height: 8rem;
+    font-size: xx-small; cursor: pointer;
+  }
+
+  .white-section .car-image {
+    width: 100%;
+  }
+}
+
+/* Adjustments for Larger Screens */
+@media (max-width: 485px) {
+  .white-section .text-container {
+    margin-left: 6rem; /* Move slightly to the right for large screens */
+  }
+}
