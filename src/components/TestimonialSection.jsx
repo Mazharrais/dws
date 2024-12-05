@@ -129,7 +129,7 @@ const TestimonialSection = () => {
         <div className="text-container ">
           {/* Testimonial Text */}
           <p className="testimonial-text">Testimonials That</p>
-          <p className="testimonial-text ">
+          <p className="testimonial-text1 ">
             <span>Speak To </span>
             <span>Our Results</span>
           </p>

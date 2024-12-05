@@ -48,7 +48,7 @@ const BlackSection = () => {
       <h1 className="text-[#FFFFFF] text-center mb-4 text-2xl sm:text-2xl font-bold">
         Project Portfolio
       </h1>
-      <p className="text-[#A39898] text-center mb-8 text-[9px] sm:text-lg">
+      <p className="text-[#f0ebeb] text-center mb-8 text-[10px] sm:text-lg">
         If you want to discuss your upcoming project with our customer support
         <span className="block">
           team, call us now. Let's connect and resolve all your queries promptly.
@@ -165,7 +165,7 @@ const BlackSection = () => {
 </div>
 
       <div className="mt-8 md:mt-12 text-center">
-        <p className="text-[#A39898] py-4 px-6 md:px-8 text-sm md:text-lg cursor-pointer hover:underline">
+        <p className="text-[#f0ebeb] py-4 px-6 md:px-8 text-sm md:text-lg cursor-pointer hover:underline">
           View All Projects
         </p>
       </div>

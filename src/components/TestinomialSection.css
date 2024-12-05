@@ -36,7 +36,7 @@
     height: 30rem !important;
     margin-left: 4rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
   }
   
   .play-button {
@@ -66,32 +66,46 @@
     color: white;
     font-size: 1.875rem; /* Tailwind's text-3xl equivalent */
     text-align: center;
+  
     font-weight: 600;
     line-height: 1.3; /* Adjusted for better vertical alignment */
     margin: 0; /* Remove any default margin */
-    padding: 0; /* Ensure no padding affects alignment */
+    padding-right:4rem ; /* Ensure no padding affects alignment */
     
 }
-
+.testimonial-text1 {
+  color: white;
+  font-size: 1.875rem; /* Tailwind's text-3xl equivalent */
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.3;
+  padding-right: 1rem;
+}
  
   
   .project-description {
     color: white;
     text-align: center;
     margin-top: 1rem;
+    padding-right: 6.5rem;
     
+  }
+  .project-description span{
+    padding-left: 1.5rem;
   }
   
   .website-button {
     background-color: #ffffff;
     color: black;
     border-radius: 9999px; /* Fully rounded */
-    padding: 1rem 1rem;
+    padding: 0.8rem 0.8rem;
     margin-top: 1.5rem;
+    margin-right: 7.8rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     transition: background-color 0.2s;
+  
   }
   
   .website-button:hover {
@@ -102,6 +116,7 @@
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
+    
   }
   
   .store-button {
@@ -127,17 +142,6 @@
 
 
 
-  
-
-
-  
-
-
-
-
-
-
-
 
 
   
@@ -152,6 +156,7 @@
     .arrow-button{
         margin-top: 2rem;
         margin-bottom: 2rem;
+        
     }
 
 
@@ -166,25 +171,43 @@
     }
   
     .play-button {
-      left: 7.1rem;
-      top: 15rem;
+      left: 9.1rem;
+      top: 12rem;
     }
   
     .text-container {
       margin-top: 1rem;
     }
+    .testimonial-text{
+      font-size: 1.2rem;
+      padding-right: 3rem;
+    }
+    .testimonial-text1 {
+      font-size: 1.2rem; /* Tailwind's text-2xl equivalent */
+      padding-right: 1rem;
+    }
+    .project-description {
+      padding-left: 3rem; /* Reduce padding for smaller screens */
+      font-size: 11px; /* Smaller font size */
+      margin-top: 0.5rem;
+    }
   
-    .testimonial-text {
-      font-size: 1.5rem; /* Tailwind's text-2xl equivalent */
+    .project-description span {
+      margin-left: -0.8rem; /* Adjust alignment for reduced padding */
+      padding-left: 1.5rem;
     }
   
     .website-button {
-      padding: 0.55rem 1rem;
+    margin-right: 2rem;
+    font-size: 12px;
       margin-top: 1rem;
+      
+
     }
   
     .store-buttons {
       gap: 0.5rem;
+      font-size: 12px;
     }
   
     .store-button {

@@ -57,7 +57,7 @@ const ExploreSection = () => {
         Explore Insights In{' '}
         <span className='text-[#232323] font-bold'>Our Blog</span>
       </p>
-      <p className='text-[#A39898] text-center mt-4 text-sm'>
+      <p className='text-[#615c5c] text-center mt-4 text-sm'>
         Find lots of insights and information on our blog. Explore, learn, and get inspired today.
       </p>
 
@@ -118,7 +118,7 @@ const ExploreSection = () => {
                 <p className='text-[#545971] mt-2 text-[10px] leading-relaxed'>
                   {item.description}
                 </p>
-                <div className='flex gap-2 mt-2'>
+                <div className='flex gap-2 mt-2 flex-wrap'>
                   {item.tags.map((tag, tagIndex) => (
                     <button
                       key={tagIndex}
@@ -131,20 +131,21 @@ const ExploreSection = () => {
               </div>
             ))}
           </Slider>
+
         </div>
       </div>
 
       {/* View More Section */}
-      <div className="flex justify-center items-center text-sm mt-8 space-x-2">
-  <p className="text-[#A39898] transition-colors hover:text-[#e2e8f0]">
-    View More
-  </p>
-  <img
-    src={rightArrow}
-    alt="Arrow"
-    className="transition-transform transform hover:translate-x-2"
-  />
-</div>
+      <div className="flex justify-center items-between text-sm mt-8 space-x-2">
+        <p className="text-[#615c5c] transition-colors hover:text-[#e2e8f0]">
+          View More
+        </p>
+        <img
+          src={rightArrow}
+          alt="Arrow"
+          className="transition-transform transform hover:translate-x-2"
+        />
+      </div>
 
     </div>
   );

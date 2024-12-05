@@ -86,18 +86,20 @@ const BoySection = () => {
 
         {/* Text Section */}
         <div className="boy-section-text">
-          <p>
-            Let's Build
-            <br /> Something Great
-            <br />
-            <span>Together</span>
-          </p>
+  <p>
+    Let's Build
+    <br />
+    <span>Something Great</span>
+    <br />
+    Together
+  </p>
+  <button className="boy-section-button">
+    Contact Us
+    <img src={rightArrow} alt="Right Arrow" />
+  </button>
+</div>
 
-          <button className="boy-section-button">
-            Contact Us
-            <img src={rightArrow} alt="Right Arrow" />
-          </button>
-        </div>
+
 
         {/* Boy Image */}
         <div className="boy-section-boy">

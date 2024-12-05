@@ -162,11 +162,11 @@ const WhiteSection = () => {
 
           {/* Blue Section with Square Containers */}
           <div className="blue-section translate-x-[1rem]">
-            <div className="square-container  translate-y-[6rem] bg-[#111111] text-white">
+            <div className="square-container  translate-y-[6rem]  bg-[#111111] text-white">
               <div className="bg-white p-4 rounded-lg">
-                <img src={websiteIcon} alt="Website Development" className="w-12 h-12 " />
+                <img src={websiteIcon} alt="Website Development" className="w-5 h-5 sm:w-12 sm:h-12" />
               </div>
-              <p className="mt-4  text-center">
+              <p className="mt-4 sm:mt-4 text-center">
                 Website
                 <span className="block">Development</span>
               </p>
@@ -174,7 +174,7 @@ const WhiteSection = () => {
 
             <div className="square-container translate-y-[6rem] bg-white text-gray-800">
               <div className="bg-[#F4F4F4] p-4 rounded-lg">
-                <img src={mobileIcon} alt="Mobile Development" className="w-12 h-12 " />
+                <img src={mobileIcon} alt="Mobile Development" className="w-5 h-5 sm:w-12 sm:h-12" />
               </div>
               <p className="mt-4 text-center">
                 Mobile
@@ -184,7 +184,7 @@ const WhiteSection = () => {
 
             <div className="square-container translate-y-[6rem] bg-white text-gray-800">
               <div className="bg-[#F4F4F4] p-4 rounded-lg">
-                <img src={graphicIcon} alt="Graphic Designing" className="w-12 h-12 " />
+                <img src={graphicIcon} alt="Graphic Designing" className="w-5 h-5 sm:w-12 sm:h-12" />
               </div>
               <p className="mt-4 text-center">
                 Graphic
