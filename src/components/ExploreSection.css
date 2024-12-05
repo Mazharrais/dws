@@ -1,0 +1,18 @@
+
+
+/* styles.css */
+
+/* Ensure the tags are aligned horizontally on small screens (max-width: 485px) */
+@media (max-width: 485px) {
+    .flex {
+      display: flex;
+      gap: 8px; /* Add spacing between buttons */
+      flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+  
+    button {
+      display: inline-block;
+    }
+  }
+  
+  
