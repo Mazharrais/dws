@@ -133,9 +133,9 @@ const WhiteSection = () => {
         backgroundImage: `url(${backgroundImage})`,
       }}
     >
-      <div className="flex flex-col space-y-16 mb-10 px-16">
+      <div className="flex flex-col space-y-16 mb-10 px-16 chnageWihteEctions">
         {/* Top Section with Text and Buttons */}
-        <div className="flex items-start justify-between translate-x-11 ml-[4rem] space-y-8">
+        <div className="flex items-start justify-between  space-y-8">
           {/* Left Text Section */}
           <div className="text-containerLeft">
             <h2 className=" text-xl font-bold text-black  ">We Provide</h2>
@@ -161,7 +161,7 @@ const WhiteSection = () => {
           </div>
 
           {/* Blue Section with Square Containers */}
-          <div className="blue-section translate-x-[1rem]">
+          <div className="blue-section">
             <div className="square-container  translate-y-[6rem]  bg-[#111111] text-white">
               <div className="bg-white p-4 rounded-lg">
                 <img src={websiteIcon} alt="Website Development" className="w-5 h-5 sm:w-12 sm:h-12" />

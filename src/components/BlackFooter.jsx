@@ -240,10 +240,10 @@ import linkedIn from '../assets/linkedin.png';
 import instagram from '../assets/instagram.png';
 
 const BlackFooter = () => {
-  const [showAbout, setShowAbout] = useState(false);
-  const [showGetStarted, setShowGetStarted] = useState(false);
-  const [showServices, setShowServices] = useState(false);
-  const [showContact, setShowContact] = useState(false);
+  const [showAbout, setShowAbout] = useState(true);
+  const [showGetStarted, setShowGetStarted] = useState(true);
+  const [showServices, setShowServices] = useState(true);
+  const [showContact, setShowContact] = useState(true);
 
   return (
     <div id="contact">

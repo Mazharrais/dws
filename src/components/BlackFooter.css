@@ -103,7 +103,9 @@
     #contact {
       flex-direction: column;
       gap: 1rem;
-      padding-top: 1rem;
+      /* padding-top: 1rem; */
+      padding-inline: 20px;
+      
     }
     
     /* .logo-section img {
@@ -115,8 +117,10 @@
     } */
   
     .contact-logo {
-      width: 12rem; /* Further adjust for very small screens */
+      width: 300px; /* Further adjust for very small screens */
       padding-bottom: 2rem;
+      height: 120px;
+      margin-left: 0px !important;
       
     }
 
@@ -126,7 +130,7 @@
     }
   
     .section-content {
-      font-size: 0.7rem;
+      font-size:14px;
       text-align: start;
       font-family: 'Times New Roman', Times, serif;
     }

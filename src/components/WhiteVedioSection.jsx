@@ -39,7 +39,7 @@ const WhiteVedioSection = () => {
             <p className="text-[#232323] mr-[6rem] font-bold text-sm sm:text-lg">
               HOW WE MAKE <span className="text-[#111111]">BETTER</span>
             </p>
-            <ul className="mt-4 space-y-6 text-sm sm:text-[14px] ml-[2rem] list-disc list-inside">
+            <ul className="mt-4 space-y-6 text-sm sm:text-[14px] ml-[2rem] tetetete list-disc list-inside">
               <li className="text-[#A39898]">
                 Observation, of the goal market and designed advertising &<br />
                 marketing approach format in accordance with the requirement.
@@ -69,7 +69,7 @@ const WhiteVedioSection = () => {
       {/* Video Section with Play Buttons */}
       <div className="flex justify-center flex-wrap gap-4 mt-20  md:mt-8">
         {/* Slider for small screens */}
-        <div className="w-full md:hidden">
+        <div className="w-full md:hidden px-3 md:px-0">
           <Slider {...sliderSettings}>
             {videoData.map((item, index) => (
               <div

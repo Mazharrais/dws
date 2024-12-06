@@ -112,7 +112,7 @@ const TestimonialSection = () => {
     }
   };
   return (
-    <div className="testimonial-section">
+    <div className="testimonial-section md:px-0">
       {/* Left Arrow Button */}
       <img src={leftBtn} alt="Left Button" className="arrow-button" />
 
@@ -122,8 +122,10 @@ const TestimonialSection = () => {
         {/* <img src={boy} alt="Boy" className="boy-image" /> */}
 
         {/* Play Button on Top of Boy Image */}
-        <video src={vid} className="boy-image" ref={videoRef} onPause={()=>setIsRun(false)} controls={isRun} ></video>
-        {!isRun&&<img src={button} alt="Play Button" onClick={handlePlay} className="play-button" />}
+       <div className='kmdksl relative'>
+       <video src={vid} className="boy-image" ref={videoRef} onPause={()=>setIsRun(false)} controls={isRun} ></video>
+       {!isRun&&<img src={button} alt="Play Button" onClick={handlePlay} className="play-button" />}
+       </div>
 
         {/* Text and Buttons Container */}
         <div className="text-container ">

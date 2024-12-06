@@ -52,7 +52,7 @@ const ExploreSection = () => {
   ];
 
   return (
-    <div className='bg-[#FFFFFF] mb-12'>
+    <div className='bg-[#FFFFFF] mb-12 px-3 md:px-0'>
       <p className='text-[#232323] text-center text-2xl  font-bold'>
         Explore Insights In{' '}
         <span className='text-[#232323] font-bold'>Our Blog</span>
@@ -118,7 +118,7 @@ const ExploreSection = () => {
                 <p className='text-[#545971] mt-2 text-[10px] leading-relaxed'>
                   {item.description}
                 </p>
-                <div className='flex gap-2 mt-2 flex-wrap'>
+                <div className='gap-1 mt-2 flex-wrap' style={{display:"flex"}} >
                   {item.tags.map((tag, tagIndex) => (
                     <button
                       key={tagIndex}
@@ -136,7 +136,7 @@ const ExploreSection = () => {
       </div>
 
       {/* View More Section */}
-      <div className="flex justify-center items-between text-sm mt-8 space-x-2">
+      <div className="justify-center items-between text-sm mt-8 space-x-2" style={{display:"flex"}}>
         <p className="text-[#615c5c] transition-colors hover:text-[#e2e8f0]">
           View More
         </p>

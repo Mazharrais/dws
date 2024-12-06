@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import logo from '../assets/deskWorkBlack.png'; // Update with your logo path
 import searchIcon from '../assets/blackSearch.png'; // Update with your search icon path
 import { Link } from 'react-scroll';
+import "./Navbar.css"
 
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-black p-2 ">
+    <nav className="bg-white text-black p-2 resNav">
       <div className="container mx-auto flex justify-between items-center md:px-6">
         {/* Logo Section */}
         <div className="flex items-center space-x-4">
