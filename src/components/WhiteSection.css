@@ -1,9 +1,14 @@
-General Styles
+/* General Styles */
 .white-section {
   background-color: white;
   padding: 0;
   background-size: cover;
   background-position: top left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures full screen height for centering */
 }
 
 .white-section .text-container {
@@ -11,6 +16,7 @@ General Styles
   flex-direction: column;
   margin-left: 4rem; /* Default for smaller screens */
   max-width: 30rem;
+  text-align: center; /* Center text inside container */
 }
 
 .text-containerLeft span {
@@ -29,6 +35,7 @@ General Styles
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+  justify-content: center; /* Center buttons horizontally */
 }
 
 .white-section .button {
@@ -39,6 +46,13 @@ General Styles
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.white-section .button:hover {
+  background-color: #111111; /* Button background becomes visible */
+  color: white; /* Change the icon color to white */
+  transform: scale(1.1); /* Slightly scale the button for effect */
 }
 
 .white-section .blue-section {
@@ -84,40 +98,37 @@ General Styles
 /* Responsive Styles for Screen Width 391px to 485px */
 @media (max-width: 485px) {
   .white-section .text-container {
-    
     max-width: 100%;
+    margin-left: 0; /* Remove margin for small screens */
   }
-  .chnageWihteEctions{
+
+  .chnageWihteEctions {
     padding: 0px !important;
   }
-  .text-containerLeft{
-    width: 90%;
+
+  .text-containerLeft {
+    width: 80%;
   }
-  .text-containerLeft span {
-    margin-right: 0 !important;
-  }
-  
-  .text-containerLeft h2 {
-    margin-right: 0 !important;
-  }
-  
+
+  .text-containerLeft span,
+  .text-containerLeft h2,
   .text-containerLeft h3 {
     margin-right: 0 !important;
   }
+
   .white-section .buttons {
     gap: 0.5rem;
     justify-content: center;
+    margin-right: 8rem;
   }
 
   .white-section .blue-section {
     position: relative;
     transform: none;
     width: 100%;
-    /* margin: 0 auto; */
     height: 100px;
     flex-direction: row;
     justify-content: center;
-    /* margin-left: 0.5rem; */
     border-radius: 0;
     padding: 10px;
   }
@@ -125,21 +136,60 @@ General Styles
   .white-section .square-container {
     width: 6rem;
     height: 8rem;
-    font-size: xx-small; cursor: pointer;
-    /* padding-top:20px; */
+    font-size: xx-small;
+    cursor: pointer;
     margin-top: -80px !important;
   }
 
   .white-section .car-image {
     width: 100%;
     height: 100px;
-    /* margin-left: 2rem; */
   }
 }
 
-/* Adjustments for Larger Screens */
-@media (max-width: 485px) {
+/* Centering for 25% Screen Width (Or smaller) */
+@media (max-width: 25%) {
+  .white-section {
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .white-section .text-container,
+  .white-section .buttons,
+  .white-section .blue-section,
+  .white-section .car-image {
+    margin: 0; /* Remove any margin */
+  }
+
+  .white-section .blue-section {
+    width: 100%; /* Make the blue section take full width */
+    padding-right: 0; /* Remove excessive padding */
+    padding-left: 0; /* Ensure no left padding */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-direction: row; /* Align items side by side */
+  }
+
+  .white-section .square-container {
+    width: 6rem;
+    height: 8rem;
+    font-size: xx-small;
+    cursor: pointer;
+    margin-top: 1rem; /* Adjust margin for proper spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .white-section .car-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem; /* Adjust margin for spacing */
+  }
+
   .white-section .text-container {
-    margin-left: 6rem; /* Move slightly to the right for large screens */
+    text-align: center; /* Center text */
+    margin-top: 1rem; /* Adjust spacing for alignment */
   }
 }

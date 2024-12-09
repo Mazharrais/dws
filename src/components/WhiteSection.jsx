@@ -113,8 +113,7 @@
 
 
 
-
-import React from 'react';
+import React, { useState } from 'react';
 import backgroundImage from '../assets/whiteBackground.png';
 import rightArrow from '../assets/rightArrow.png';
 import leftArrow from '../assets/leftBlack.png';
@@ -125,9 +124,19 @@ import graphicIcon from '../assets/Group 103.png';
 import './WhiteSection.css';
 
 const WhiteSection = () => {
+  const [activeSection, setActiveSection] = useState(0); // 0: Website, 1: Mobile, 2: Graphic Designing
+
+  const handleArrowClick = (direction) => {
+    if (direction === 'right') {
+      setActiveSection((prev) => (prev + 1) % 3); // Moves right: 0 -> 1 -> 2 -> 0
+    } else if (direction === 'left') {
+      setActiveSection((prev) => (prev - 1 + 3) % 3); // Moves left: 0 -> 2 -> 1 -> 0
+    }
+  };
+
   return (
     <div
-    id='services'
+      id="services"
       className="white-section"
       style={{
         backgroundImage: `url(${backgroundImage})`,
@@ -135,10 +144,10 @@ const WhiteSection = () => {
     >
       <div className="flex flex-col space-y-16 mb-10 px-16 chnageWihteEctions">
         {/* Top Section with Text and Buttons */}
-        <div className="flex items-start justify-between  space-y-8">
+        <div className="flex items-start justify-between space-y-8">
           {/* Left Text Section */}
-          <div className="text-containerLeft">
-            <h2 className=" text-xl font-bold text-black  ">We Provide</h2>
+          <div className="text-containerLeft" style={{ marginLeft: '7rem' }}>
+            <h2 className="text-xl font-bold text-black">We Provide</h2>
             <h2 className="text-xl font-bold text-black">Awesome</h2>
             <h3 className="text-xl font-bold text-[#111111]">Technologies</h3>
             <p className="text-gray-500 mt-4">
@@ -151,10 +160,16 @@ const WhiteSection = () => {
 
             {/* Buttons */}
             <div className="buttons">
-              <button className="button border-2 border-[#111111] bg-white hover:bg-[#111111] hover:text-white">
+              <button
+                className="button border-2 border-[#111111] bg-white hover:bg-[#111111] hover:text-white"
+                onClick={() => handleArrowClick('left')}
+              >
                 <img src={leftArrow} alt="Left Arrow" className="w-4 h-4" />
               </button>
-              <button className="button bg-[#111111] text-white hover:bg-white hover:text-[#111111]">
+              <button
+                className="button bg-[#111111] text-white hover:bg-white hover:text-[#111111]"
+                onClick={() => handleArrowClick('right')}
+              >
                 <img src={rightArrow} alt="Right Arrow" className="w-4 h-4" />
               </button>
             </div>
@@ -162,9 +177,18 @@ const WhiteSection = () => {
 
           {/* Blue Section with Square Containers */}
           <div className="blue-section">
-            <div className="square-container  translate-y-[6rem]  bg-[#111111] text-white">
+            {/* Website Development Square */}
+            <div
+              className={`square-container translate-y-[6rem] ${
+                activeSection === 0 ? 'bg-[#111111] text-white' : 'bg-white text-gray-800'
+              }`}
+            >
               <div className="bg-white p-4 rounded-lg">
-                <img src={websiteIcon} alt="Website Development" className="w-5 h-5 sm:w-12 sm:h-12" />
+                <img
+                  src={websiteIcon}
+                  alt="Website Development"
+                  className="w-5 h-5 sm:w-12 sm:h-12"
+                />
               </div>
               <p className="mt-4 sm:mt-4 text-center">
                 Website
@@ -172,9 +196,18 @@ const WhiteSection = () => {
               </p>
             </div>
 
-            <div className="square-container translate-y-[6rem] bg-white text-gray-800">
+            {/* Mobile Development Square */}
+            <div
+              className={`square-container translate-y-[6rem] ${
+                activeSection === 1 ? 'bg-[#111111] text-white' : 'bg-white text-gray-800'
+              }`}
+            >
               <div className="bg-[#F4F4F4] p-4 rounded-lg">
-                <img src={mobileIcon} alt="Mobile Development" className="w-5 h-5 sm:w-12 sm:h-12" />
+                <img
+                  src={mobileIcon}
+                  alt="Mobile Development"
+                  className="w-5 h-5 sm:w-12 sm:h-12"
+                />
               </div>
               <p className="mt-4 text-center">
                 Mobile
@@ -182,9 +215,18 @@ const WhiteSection = () => {
               </p>
             </div>
 
-            <div className="square-container translate-y-[6rem] bg-white text-gray-800">
+            {/* Graphic Designing Square */}
+            <div
+              className={`square-container translate-y-[6rem] ${
+                activeSection === 2 ? 'bg-[#111111] text-white' : 'bg-white text-gray-800'
+              }`}
+            >
               <div className="bg-[#F4F4F4] p-4 rounded-lg">
-                <img src={graphicIcon} alt="Graphic Designing" className="w-5 h-5 sm:w-12 sm:h-12" />
+                <img
+                  src={graphicIcon}
+                  alt="Graphic Designing"
+                  className="w-5 h-5 sm:w-12 sm:h-12"
+                />
               </div>
               <p className="mt-4 text-center">
                 Graphic

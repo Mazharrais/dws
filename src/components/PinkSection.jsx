@@ -44,7 +44,16 @@
 // export default PinkSection;
 
 
+
+
+
+//  2nd code...........
+
+
+
+
 import React from 'react';
+import './Pinksection.css';
 import ecommerce from '../assets/Ecommerceblack.png';
 import logistic from '../assets/Logisticblack.png';
 import banking from '../assets/Bankingblack.png';
@@ -63,41 +72,38 @@ const PinkSection = () => {
   ];
 
   return (
-    <div id="about" className="bg-[#F4F4F4] dark:bg-[#2C2C2C] text-center py-16" style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
-      <p className="text-[#232323] text-center text-2xl font-bold">
+    <div id="about" className="bg-[#F4F4F4] dark:bg-[#2C2C2C] text-center py-16">
+      <p className="text-[#232323] text-center text-2xl sm:text-2xl font-bold">
         INDUSTRIES WE <span className="text-[#111111]">WORK IN</span>
       </p>
-      <p className="text-[#A39898] dark:text-[#B0B0B0] font-semibold text-center my-4 text-xs sm:text-base md:text-xl">
+      <p className="text-[#A39898] dark:text-[#B0B0B0] font-semibold text-center my-4 text-md sm:text-base md:text-xl">
         We significantly influence the daily operations of various industries.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-12 gap-6 mt-12 lg:gap-[2rem] justify-center" style={{display:"flex"}}>
-  {industries.map((industry, index) => (
-    <div
-      key={index}
-      className="flex flex-col items-center transition-transform transform hover:scale-105"
-    >
-      <div className="w-[8rem] h-32 sm:h-30 md:h-35 bg-white dark:bg-[#3C3C3C] flex items-center justify-center rounded-md shadow-md hover:shadow-lg">
-        <img
-          src={industry.image}
-          alt={`${industry.line1} ${industry.line2}`}
-          className="w-15 h-15 object-contain"
-        />
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8  mt-12 justify-center">
+        {industries.map((industry, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center transition-transform transform hover:scale-105"
+          >
+            <div className="w-[8rem] h-32 sm:h-30 md:h-35 bg-white dark:bg-[#3C3C3C] flex items-center justify-center rounded-md shadow-md hover:shadow-lg">
+              <img
+                src={industry.image}
+                alt={`${industry.line1} ${industry.line2}`}
+                className="w-15 h-15 object-contain"
+              />
+            </div>
+            <p className="text-[#232323] w-[100px] font-semibold mt-4 text-xs sm:text-sm md:text-base lg:text-center lg:max-w-xs lg:block lg:whitespace-normal">
+              {industry.line1} {industry.line2}
+            </p>
+          </div>
+        ))}
       </div>
-      <p className="text-[#232323] w-[100px] font-semibold mt-4 text-xs sm:text-sm md:text-base lg:text-center lg:max-w-xs lg:block lg:whitespace-normal">
-  {industry.line1}
-  {/* <br /> */} {" "}
-  {industry.line2}
-</p>
-
-
-
-    </div>
-  ))}
-</div>
-
     </div>
   );
 };
 
 export default PinkSection;
+
+
+

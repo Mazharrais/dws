@@ -1,0 +1,30 @@
+
+
+/* Default styles for 100% and responsive screens */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Center the section for 25% width screens */
+  @media (max-width: 640px) { /* Adjust breakpoint as needed */
+    #about {
+      margin: 0 auto;
+      text-align: center;
+    }
+  
+    #about .grid {
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr); /* Adjust as needed */
+    }
+  
+    #about .flex {
+      justify-content: center;
+    }
+  }
+  
+
+ 
