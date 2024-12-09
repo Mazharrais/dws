@@ -63,7 +63,7 @@ const PinkSection = () => {
   ];
 
   return (
-    <div id="about" className="bg-[#F4F4F4] dark:bg-[#2C2C2C] text-center py-16">
+    <div id="about" className="bg-[#F4F4F4] dark:bg-[#2C2C2C] text-center py-16" style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
       <p className="text-[#232323] text-center text-2xl font-bold">
         INDUSTRIES WE <span className="text-[#111111]">WORK IN</span>
       </p>
@@ -71,7 +71,7 @@ const PinkSection = () => {
         We significantly influence the daily operations of various industries.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-12 gap-6 mt-12 lg:ml-[16rem] lg:gap-[10rem] justify-between mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-12 gap-6 mt-12 lg:gap-[2rem] justify-center" style={{display:"flex"}}>
   {industries.map((industry, index) => (
     <div
       key={index}
