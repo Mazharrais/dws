@@ -80,6 +80,7 @@ import client from "../assets/Clientsblack.png"; // Import your images
 import projects from "../assets/Projectsblack.png";
 import awards from "../assets/Awardsblack.png";
 import users from "../assets/Userblack.png";
+// import './SmallSection.css';
 
 const SmallSection = () => {
   const [counts, setCounts] = useState({
@@ -127,18 +128,18 @@ const SmallSection = () => {
 
   return (
     <div
-      className="flex flex-wrap items-center justify-center md:space-x-12 space-y-6 md:space-y-0 mx-2 md:mx-[14%] rounded-lg py-6 bg-white shadow-lg -translate-y-20 relative"
+      className="flex flex-wrap items-center justify-center md:space-x-12  space-y-6 md:space-y-0 mx-2   lg:mx-[13%]  rounded-lg py-6 bg-white shadow-lg -translate-y-20 relative"
     >
       {/* Circle 1 */}
       <div className="w-full sm:w-auto text-center hover:text-[#A0A0A0]">
         <div className="relative mx-auto bg-[#F4F4F4] w-16 h-16 rounded-full flex items-center justify-center hover:bg-[#e6e6e6]">
           <img src={client} alt="Icon 1" className="w-8 h-8" />
         </div>
-        <p className="text-[#111111] font-bold text-md mt-4 hover:text-[#A0A0A0]">
+        <p className="text-[#111111] font-bold text-xl mt-4 hover:text-[#A0A0A0]">
           {counts.clients}+
         </p>
-        <p className="text-[#5B5B5B] text-sm hover:text-[#A0A0A0]">
-          Happy Clients
+        <p className="text-[#5B5B5B] text-xl font-semibold hover:text-[#A0A0A0]">
+          happy Clients
         </p>
       </div>
 
@@ -150,10 +151,10 @@ const SmallSection = () => {
         <div className="relative mx-auto bg-[#F4F4F4] w-16 h-16 rounded-full flex items-center justify-center hover:bg-[#e6e6e6]">
           <img src={projects} alt="Icon 2" className="w-8 h-8" />
         </div>
-        <p className="text-[#111111] font-bold text-md mt-4 hover:text-[#A0A0A0]">
+        <p className="text-[#111111] font-bold text-xl mt-4 hover:text-[#A0A0A0]">
           {counts.projects}+
         </p>
-        <p className="text-[#5B5B5B] text-sm hover:text-[#A0A0A0]">
+        <p className="text-[#5B5B5B] text-xl font-semibold hover:text-[#A0A0A0]">
           Delivered Projects
         </p>
       </div>
@@ -166,10 +167,10 @@ const SmallSection = () => {
         <div className="relative mx-auto bg-[#F4F4F4] w-16 h-16 rounded-full flex items-center justify-center hover:bg-[#e6e6e6]">
           <img src={awards} alt="Icon 3" className="w-5 h-8" />
         </div>
-        <p className="text-[#111111] font-bold text-md mt-4 hover:text-[#A0A0A0]">
+        <p className="text-[#111111] font-bold text-xl mt-4 hover:text-[#A0A0A0]">
           {counts.awards}+
         </p>
-        <p className="text-[#5B5B5B] text-sm hover:text-[#A0A0A0]">Awards</p>
+        <p className="text-[#5B5B5B] text-xl font-semibold hover:text-[#A0A0A0]">Awards</p>
       </div>
 
       {/* Vertical Line */}
@@ -180,10 +181,10 @@ const SmallSection = () => {
         <div className="relative mx-auto bg-[#F4F4F4] w-16 h-16 rounded-full flex items-center justify-center hover:bg-[#e6e6e6]">
           <img src={users} alt="Icon 4" className="w-8 h-8" />
         </div>
-        <p className="text-[#111111] font-bold text-md mt-4 hover:text-[#A0A0A0]">
+        <p className="text-[#111111] font-bold text-xl mt-4 hover:text-[#A0A0A0]">
           {counts.ratings}+
         </p>
-        <p className="text-[#5B5B5B] text-sm hover:text-[#A0A0A0]">
+        <p className="text-[#5B5B5B] text-xl font-semibold hover:text-[#A0A0A0]">
           Five Star Rating
         </p>
       </div>

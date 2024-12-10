@@ -53,10 +53,10 @@ const BlueSection = () => {
       {/* Main Content */}
       <div className="relative text-center mb-2 max-w-lg md:max-w-2xl px-4 md:px-6">
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4">Desk Work Solution</h1>
+        <h1 className="text-3xl md:text-6xl font-bold mb-3 md:mb-4">Desk Work Solution</h1>
 
         {/* Paragraph */}
-        <p className="text-lg  font-semibold mb-8  text-center">
+        <p className="text-[22px]  font-semibold mb-8  text-center">
           {/* Large screen layout */}
           <span className="hidden sm:block">
             Limitless Approach to Digital Business. <br />
@@ -74,13 +74,13 @@ const BlueSection = () => {
         {/* Button with Arrow Icon */}
         <div className="flex justify-center items-center">
   <button
-    className="relative bg-white text-black font-semibold py-5 px-6 md:py-5 md:px-10 rounded-full flex items-center transition duration-300 hover:bg-gray-300"
+    className="relative bg-white text-black font-bold py-5 px-6 md:py-5 md:px-10 rounded-full flex items-center transition duration-300 hover:bg-gray-300"
   >
     <span className="text-sm sm:text-base mr-[1rem]">Request a Quote</span>
     <img
       src={rightArrow}
       alt="Arrow Icon"
-      className="absolute ml-[8rem] top-1/2 transform -translate-y-1/2 w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 hover:translate-x-1"
+      className="absolute ml-[8rem] top-1/2 transform -translate-y-[7px] w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 hover:translate-x-1"
     />
   </button>
 </div>

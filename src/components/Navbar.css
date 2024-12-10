@@ -42,11 +42,11 @@ nav {
       justify-content: space-between;
       padding: 0 1rem;
     }
-  
+    
     .logo-section img {
       margin-left: 0; /* Adjust for alignment with the menu button */
     }
-  
+    
     /* Mobile Menu Button Styling */
     .mobile-menu-btn {
       display: flex;
@@ -54,6 +54,7 @@ nav {
       justify-content: space-between;
       width: 24px;
       height: 24px;
+      
       cursor: pointer;
     }
   

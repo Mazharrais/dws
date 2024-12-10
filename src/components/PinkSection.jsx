@@ -73,7 +73,7 @@ const PinkSection = () => {
 
   return (
     <div id="about" className="bg-[#F4F4F4] dark:bg-[#2C2C2C] text-center py-16">
-      <p className="text-[#232323] text-center text-2xl sm:text-2xl font-bold">
+      <p className="text-[#232323] text-center text-2xl sm:text-3xl font-bold">
         INDUSTRIES WE <span className="text-[#111111]">WORK IN</span>
       </p>
       <p className="text-[#A39898] dark:text-[#B0B0B0] font-semibold text-center my-4 text-md sm:text-base md:text-xl">
@@ -93,7 +93,7 @@ const PinkSection = () => {
                 className="w-15 h-15 object-contain"
               />
             </div>
-            <p className="text-[#232323] w-[100px] font-semibold mt-4 text-xs sm:text-sm md:text-base lg:text-center lg:max-w-xs lg:block lg:whitespace-normal">
+            <p className="text-[#232323] w-[100px] font-semibold mt-4 text-md sm:text-sm md:text-sm md:font-bold lg:text-center lg:max-w-xs lg:block lg:whitespace-normal">
               {industry.line1} {industry.line2}
             </p>
           </div>

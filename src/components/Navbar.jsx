@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex font-semibold gap-4 text-[12px]">
+        <div className="hidden md:flex font-semibold gap-4 text-[12px] text-[13px] space-x-1">
           <Link to="home" smooth={true} duration={500} className="hover:text-gray-700 text-[#A39898] cursor-pointer">
             Home
           </Link>

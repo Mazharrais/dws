@@ -36,10 +36,10 @@ const WhiteVedioSection = () => {
         {/* Text Section */}
         <div className="md:w-1/2 flex justify-end pl-6 md:ml-[6rem] text-left md:text-left"> {/* Center text on small screens */}
           <div>
-            <p className="text-[#232323] mr-[6rem] font-bold text-sm sm:text-lg">
+            <p className="text-[#232323] mr-[6rem] font-semibold text-xl sm:text-4xl">
               HOW WE MAKE <span className="text-[#111111]">BETTER</span>
             </p>
-            <ul className="mt-4 space-y-6 text-sm sm:text-[14px] ml-[2rem] tetetete list-disc list-inside">
+            <ul className="mt-4 space-y-6 text-xs sm:text-[16px] font-semibold ml-[2rem] tetetete list-disc list-inside">
               <li className="text-[#A39898]">
                 Observation, of the goal market and designed advertising &<br />
                 marketing approach format in accordance with the requirement.
@@ -61,7 +61,7 @@ const WhiteVedioSection = () => {
           <img
             src={laptop}
             alt="Laptop"
-            className="w-[370px] max-w-lg object-contain"
+            className="w-[420px] max-w-lg object-contain"
           />
         </div>
       </div>

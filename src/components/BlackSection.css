@@ -1,0 +1,109 @@
+.black-section {
+    background-color: #3a3a3a;
+    padding: 40px;
+    text-align: center;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    color: #e7e1e1;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-button.active {
+    background-color: #fff;
+    color: #000;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ek row mein 3 columns */
+    gap: 20px; /* Columns aur rows ke darmiyan gap */
+    justify-items: center; /* Container ke andar content ko horizontally center kare */
+    align-items: start; /* Content ko vertically start position pe rakhe */
+}
+
+.project-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 10px;
+    color: #000;
+    text-align: start;
+}
+
+.toggle-button button {
+    padding: 10px 20px;
+    color: #f0ebeb;
+    background-color: transparent;
+    border: 1px solid #f0ebeb;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 485px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 10px;
+    }
+
+    .filter-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .project-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .button-group {
+        display: none;
+    }
+
+    .content-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+    }
+} 

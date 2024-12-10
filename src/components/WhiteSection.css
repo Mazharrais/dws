@@ -36,6 +36,7 @@
   gap: 1rem;
   margin-top: 2rem;
   justify-content: center; /* Center buttons horizontally */
+  margin-right: 6rem;
 }
 
 .white-section .button {
@@ -70,8 +71,8 @@
 }
 
 .white-section .square-container {
-  width: 10rem;
-  height: 13rem;
+  width: 12rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,6 +95,9 @@
   object-fit: cover;
   margin-top: 4rem;
 }
+
+
+
 
 /* Responsive Styles for Screen Width 391px to 485px */
 @media (max-width: 485px) {

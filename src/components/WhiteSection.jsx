@@ -147,10 +147,10 @@ const WhiteSection = () => {
         <div className="flex items-start justify-between space-y-8">
           {/* Left Text Section */}
           <div className="text-containerLeft" style={{ marginLeft: '7rem' }}>
-            <h2 className="text-xl font-bold text-black">We Provide</h2>
-            <h2 className="text-xl font-bold text-black">Awesome</h2>
-            <h3 className="text-xl font-bold text-[#111111]">Technologies</h3>
-            <p className="text-gray-500 mt-4">
+            <h2 className="text-2xl md:text-4xl font-[600] text-black">We Provide</h2>
+            <h2 className="text-2xl md:text-4xl font-[600] text-black">Awesome</h2>
+            <h3 className="text-2xl md:text-4xl font-[600] text-[#111111]">Technologies</h3>
+            <p className="text-gray-500 md:text-sm font-semibold mt-4">
               We're skilled in both design <br />
               and development, allowing <br />
               us to create complex and <br />
@@ -179,15 +179,15 @@ const WhiteSection = () => {
           <div className="blue-section">
             {/* Website Development Square */}
             <div
-              className={`square-container translate-y-[6rem] ${
+              className={`square-container translate-y-[6rem]  ${
                 activeSection === 0 ? 'bg-[#111111] text-white' : 'bg-white text-gray-800'
               }`}
-            >
+              >
               <div className="bg-white p-4 rounded-lg">
                 <img
                   src={websiteIcon}
                   alt="Website Development"
-                  className="w-5 h-5 sm:w-12 sm:h-12"
+                  className="w-5 h-5 sm:w-16 sm:h-16 "
                 />
               </div>
               <p className="mt-4 sm:mt-4 text-center">
@@ -206,7 +206,7 @@ const WhiteSection = () => {
                 <img
                   src={mobileIcon}
                   alt="Mobile Development"
-                  className="w-5 h-5 sm:w-12 sm:h-12"
+                  className="w-5 h-5 sm:w-16 sm:h-16"
                 />
               </div>
               <p className="mt-4 text-center">
@@ -225,7 +225,7 @@ const WhiteSection = () => {
                 <img
                   src={graphicIcon}
                   alt="Graphic Designing"
-                  className="w-5 h-5 sm:w-12 sm:h-12"
+                  className="w-5 h-5 sm:w-16 sm:h-16"
                 />
               </div>
               <p className="mt-4 text-center">
