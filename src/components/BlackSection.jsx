@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,9 +74,9 @@ const BlackSection = () => {
       </div>
 
       {/* Grid layout for the containers */}
-      <div className="py-8 px-4 sm:px-6 lg:px-24">
+      <div className="py-8 px-4 sm:px-4 lg:px-24 flex justify-center transform-translate-x-2">
         {/* Slider for Small Screens */}
-        <div className="block sm:hidden">
+        <div className="block sm:hidden grid grid-cols-2 gap-[2rem]  ">
           <Slider {...settings}>
             {[rideApp, shoeEcom, healthApp, logisApp, entertain, walletApp].map((image, index) => {
               const bgColor =
@@ -94,13 +95,13 @@ const BlackSection = () => {
               return (
                 <div
                   key={index}
-                  className="w-full h-[450px] rounded-lg overflow-hidden shadow-lg relative"
+                  className="w-[22%] h-[450px] rounded-lg overflow-hidden shadow-lg relative"
                   style={{ backgroundColor: bgColor }}
                 >
                   <img
                     src={image}
                     alt={`Project ${index + 1}`}
-                    className="h-3/5 w-full object-cover"
+                    className="h-[60%] w-[100px] object-cover"
                   />
                   <div
                     className="absolute bottom-0 left-0 right-0 p-4 rounded-b-lg"
@@ -142,7 +143,7 @@ const BlackSection = () => {
               return (
                 <div
                   key={index}
-                  className="w-[90%] h-[450px] rounded-lg overflow-hidden shadow-lg hover:scale-105 transform transition-transform relative"
+                  className="w-[320px] h-[450px]   rounded-lg overflow-hidden shadow-lg hover:scale-105 transform transition-transform relative sm:w-[250px] sm:h-[350px] md:w-[320px] md:h-[450px]"
                   style={{ backgroundColor: bgColor }}
                 >
                   <img
@@ -179,7 +180,3 @@ const BlackSection = () => {
 };
 
 export default BlackSection;
-
-
-
-

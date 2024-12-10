@@ -95,30 +95,31 @@
     
   .boy-section-text {
     margin-top: 0.1rem; /* Reduce margin for smaller screens */
-    padding-right: 12rem; /* Adjust padding */
+    padding-right: 11rem; /* Adjust padding */
     position: absolute;
   }
 
   .boy-section-text p {
-    font-size: 1rem; /* Reduce font size */
+    font-size: 0.7rem; /* Reduce font size */
     margin-top: 2rem; /* Reduce spacing */
 
   }
 
   .boy-section-button {
     position: absolute;
-    top: 7rem;
+    top: 5.5rem;
     padding: 0.3rem;
         
     
     font-size: 0.9rem;
     display: flex; /* Use flexbox for horizontal alignment */
     align-items: center; /* Vertically align text and image */
-    gap: 0.1rem; /* Add spacing between text and image */
+    gap: 0.2rem; /* Add spacing between text and image */
+    margin-left: -1.4rem;
   }
   
   .boy-section-button img {
-    width: 1.3rem; /* Adjust image width */
+    width: 1rem; /* Adjust image width */
     height: auto; /* Maintain aspect ratio */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
@@ -127,10 +128,10 @@
 
 
     .boy-section-boy img {
-        width: 140px; /* Reduced size for better layout */
-        height: 230px;
+        width: 130px; /* Reduced size for better layout */
+        height: 150px;
         transform: translateY(0);
-        margin-bottom: 1.5rem;
-        margin-left: 9rem;
+        margin-bottom: 0.5rem;
+        margin-left: 6rem;
     }
 }

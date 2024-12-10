@@ -19,8 +19,8 @@
 }
 
 .team-image-container {
-  width: 24vw; /* Adjust size */
-  height: 62vh;
+  width: 300px; /* Adjust size */
+  height: 350px;
   overflow: hidden;
   margin-top: 4rem;
   position: relative; /* Required for hover effect */
