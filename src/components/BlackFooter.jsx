@@ -312,13 +312,29 @@ const BlackFooter = () => {
       {/* Contact Section */}
       <div className="section">
         <h2 className="section-heading" onClick={() => setShowContact(!showContact)}>
-          <i className="fas fa-arrow-down"></i> Contact
+          <i className="fas fa-arrow-down"></i> Contact Us
         </h2>
         <div className={`section-content ${showContact ? 'block' : ''}`}>
-          <div className="contact-item">
+          <div className="contact-call " alt="Callnow :">
+            
+            <p>Callnow : +1 234 529-786</p>
+          </div>
+          <div className="contact-call " alt="Emailnow :">
+            
+            <p>Email : info@deskworksol.com</p>
+          </div>
+          <div className="contact-call " alt="Address :">
+            
+            <p>Address : Gulshan-e-Jamal Rashid Minhas Road <br/> Near Kia Motors Cantonment <br/> Shopping Mall 3rd Floor Office #30</p>
+          </div>
+
+
+
+
+          {/* <div className="contact-item">
             <img className="contact-icon" src={whatsapp} alt="WhatsApp" />
             <p>+1 234 529-786</p>
-          </div>
+          </div> */}
           <div className="contact-item">
             <img className="contact-icon" src={facebook} alt="Facebook" />
             <p>/deskWorkSol</p>

@@ -36,13 +36,24 @@ const BlackSection = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: true, // For navigation dots
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true, // Ensure this is true
+    responsive: [
+      {
+        breakpoint: 640, // Adjust for responsive screens
+        settings: {
+          arrows: true, // Ensure arrows are enabled for small screens
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+  
 
   return (
     <div className="bg-[#3A3A3A] py-14 md:py-20">

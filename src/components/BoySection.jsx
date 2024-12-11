@@ -69,6 +69,7 @@ import rocket from '../assets/rocket.png';
 import boy from '../assets/laptopMan.png';
 import rightArrow from '../assets/rightBlackArrow.png';
 import './BoySection.css';
+import {motion} from 'framer-motion';
 
 const BoySection = () => {
   return (
@@ -80,9 +81,13 @@ const BoySection = () => {
     >
       <div className="boy-section-content">
         {/* Rocket Image */}
-        <div className="boy-section-rocket">
+        <motion.div 
+        initial={{opacity: 0, x: -100}}
+        whileInView={{ opacity: 1, x: 0}}
+        transition={{duration : 2}}
+        className="boy-section-rocket">
           <img src={rocket} alt="Rocket" />
-        </div>
+        </motion.div>
 
         {/* Text Section */}
         <div className="boy-section-text">
@@ -102,9 +107,13 @@ const BoySection = () => {
 
 
         {/* Boy Image */}
-        <div className="boy-section-boy">
+        <motion.div 
+        initial={{opacity: 0, x: 100}}
+        whileInView={{opacity: 1, x: 0}}
+        transition={{duration : 2}}
+        className="boy-section-boy">
           <img src={boy} alt="Boy with Laptop" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

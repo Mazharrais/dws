@@ -39,10 +39,10 @@
 
 .content-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ek row mein 3 columns */
-    gap: 20px; /* Columns aur rows ke darmiyan gap */
-    justify-items: center; /* Container ke andar content ko horizontally center kare */
-    align-items: start; /* Content ko vertically start position pe rakhe */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-items: center;
+    align-items: start; 
 }
 
 .project-card {
@@ -75,11 +75,17 @@
     cursor: pointer;
 }
 
+/* Default state - arrows hidden */
+.slick-prev,
+.slick-next {
+  display: none;
+} 
+
+/* Responsive state - arrows visible on small screens */
 
 
 
-/* Responsive styles */
-@media (max-width: 485px) {
+@media screen and (max-width: 320px) {
     .heading {
         font-size: 20px;
     }
@@ -103,7 +109,28 @@
     }
 
     .content-container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         gap: 15px;
     }
+
+
+    .slick-prev,
+  .slick-next {
+     display: block !important; 
+    z-index: 20; /* Show arrows */
+     z-index: 50;  
+    color: #0a0a0bb7; 
+    background-color: #d31919;
+  }
+
+  .slick-prev {
+    left: 10px;
+  }
+
+  .slick-next {
+    right: 10px;
+  }
+
+
+
 } 

@@ -8,6 +8,7 @@ import button from '../assets/Buttonblack.png'; // Corrected the import path for
 import Slider from 'react-slick'; // Importing react-slick for the slider functionality
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { motion } from 'framer-motion';
 
 const WhiteVedioSection = () => {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -35,7 +36,11 @@ const WhiteVedioSection = () => {
       <div className="flex flex-col md:flex-row  justify-between gap-[8rem]">
         {/* Text Section */}
         <div className="md:w-1/2 flex justify-end pl-6 md:ml-[6rem] text-left md:text-left"> {/* Center text on small screens */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }} // Upar se start kare
+            whileInView={{ opacity: 1, y: 0 }} // Apni position par aa jaye
+            transition={{ duration: 0.8, ease: "easeOut" }} // Tezi se neeche aaye
+          >
             <p className="text-[#232323] mr-[6rem] font-semibold text-xl sm:text-4xl">
               HOW WE MAKE <span className="text-[#111111]">BETTER</span>
             </p>
@@ -54,16 +59,21 @@ const WhiteVedioSection = () => {
                 achievement.
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
         {/* Laptop Image */}
-        <div className="flex justify-center    md:w-1/2 mt-8 md:mt-0 sm:display hidden md:block ">
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
+
+          className="flex justify-center    md:w-1/2 mt-8 md:mt-0 sm:display hidden md:block ">
           <img
             src={laptop}
             alt="Laptop"
             className="w-[420px] max-w-lg object-contain"
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Video Section with Play Buttons */}
