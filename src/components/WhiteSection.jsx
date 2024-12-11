@@ -190,7 +190,7 @@ const WhiteSection = () => {
                   className="w-5 h-5 sm:w-16 sm:h-16 "
                 />
               </div>
-              <p className="mt-4 sm:mt-4 text-center">
+              <p className="mt-4 sm:mt-4 text-center font-semibold">
                 Website
                 <span className="block">Development</span>
               </p>
@@ -209,7 +209,7 @@ const WhiteSection = () => {
                   className="w-5 h-5 sm:w-16 sm:h-16"
                 />
               </div>
-              <p className="mt-4 text-center">
+              <p className="mt-4 text-center font-semibold">
                 Mobile
                 <span className="block">Development</span>
               </p>
@@ -228,7 +228,7 @@ const WhiteSection = () => {
                   className="w-5 h-5 sm:w-16 sm:h-16"
                 />
               </div>
-              <p className="mt-4 text-center">
+              <p className="mt-4 text-center font-semibold">
                 Graphic
                 <span className="block">Designing</span>
               </p>

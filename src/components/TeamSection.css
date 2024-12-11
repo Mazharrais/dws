@@ -7,7 +7,7 @@
 
 .team-heading {
   color: #232323;
-  font-size: 1.875rem; /* 3xl */
+  font-size: 2.875rem; /* 3xl */
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -54,7 +54,9 @@
     width: 100%; /* Remove any extra padding */
     margin-top: 4rem;
   }
-
+  .team-heading{
+    font-size: 2rem;
+  }
   .slick-slider {
     width: 100%;
     overflow: hidden; /* Prevent extra space during slide */

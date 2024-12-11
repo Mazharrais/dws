@@ -20,9 +20,9 @@ const ToolsSection = () => {
   return (
     <div id="tech" className="mt-[4rem] mb-[6rem]">
       {/* Heading Section */}
-      <p className="text-[#232323] text-2xl font-bold text-center">
+      <p className="text-[#232323] text-3xl font-bold text-center">
         The <span className="text-[#232323]">Expertise</span>,
-        <span className="block mt-2 text-2xl">Tools, And Technologies</span>
+        <span className="block mt-2 text-3xl">Tools, And Technologies</span>
       </p>
 
       {/* Icons Section */}

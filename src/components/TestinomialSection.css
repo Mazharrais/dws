@@ -95,11 +95,16 @@
   border-radius: 9999px; /* Fully rounded */
   padding: 0.8rem 0.8rem;
   margin-top: 1.5rem;
-  margin-right: 7.8rem;
+  margin-right: 7.3rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.website-button img{
+  margin-top: 2px;
 }
 
 .website-button:hover {
@@ -110,6 +115,7 @@
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
+  font-weight: 500;
 }
 
 .store-button {

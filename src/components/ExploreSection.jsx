@@ -53,11 +53,11 @@ const ExploreSection = () => {
 
   return (
     <div className='bg-[#FFFFFF] mb-12 px-3 md:px-0'>
-      <p className='text-[#232323] text-center text-2xl  font-bold'>
+      <p className='text-[#232323] text-center text-2xl md:text-3xl  font-bold'>
         Explore Insights In{' '}
         <span className='text-[#232323] font-bold'>Our Blog</span>
       </p>
-      <p className='text-[#615c5c] text-center mt-4 text-sm'>
+      <p className='text-[#615c5c] text-center mt-4 text-sm font-semibold md:text-md'>
         Find lots of insights and information on our blog. Explore, learn, and get inspired today.
       </p>
 
@@ -75,19 +75,19 @@ const ExploreSection = () => {
                 alt={item.title}
                 className='mb-2 transition-transform transform hover:scale-105 w-full h-40 object-cover rounded-lg'
               />
-              <p className='text-[#545971] text-xs'>{item.date}</p>
-              <p className='text-[#232323] text-base font-bold mt-2 leading-tight'>
+              <p className='text-[#545971] text-xs '>{item.date}</p>
+              <p className='text-[#232323] text-base font-semibold mt-2 leading-tight'>
                 {item.title.split(' ').slice(0, 3).join(' ')} <br />
                 {item.title.split(' ').slice(3).join(' ')}
               </p>
-              <p className='text-[#545971] mt-2 text-[10px] leading-relaxed'>
+              <p className='text-[#545971] mt-2 text-[10px] font-semibold leading-relaxed'>
                 {item.description}
               </p>
               <div className='flex gap-2 mt-2'>
                 {item.tags.map((tag, tagIndex) => (
                   <button
                     key={tagIndex}
-                    className='text-[#545971] rounded-full bg-[#F3F5F9] px-3 py-1 text-xs transition-colors hover:bg-[#e2e8f0]'
+                    className='text-[#545971] rounded-full bg-[#F3F5F9] px-3 py-1 text-xs font-semibold transition-colors hover:bg-[#e2e8f0]'
                   >
                     {tag}
                   </button>
@@ -137,13 +137,13 @@ const ExploreSection = () => {
 
       {/* View More Section */}
       <div className="justify-center items-between text-sm mt-8 space-x-2" style={{display:"flex"}}>
-        <p className="text-[#615c5c] transition-colors hover:text-[#e2e8f0]">
+        <p className="text-[#615c5c] transition-colors font-semibold hover:text-[#e2e8f0]">
           View More
         </p>
         <img
           src={rightArrow}
           alt="Arrow"
-          className="transition-transform transform hover:translate-x-2"
+          className="transition-transform w-[20px] py-0.4 md:py-0.5  transform hover:translate-x-1"
         />
       </div>
 

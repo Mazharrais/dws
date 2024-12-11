@@ -93,7 +93,7 @@ const BoySection = () => {
     <br />
     Together
   </p>
-  <button className="boy-section-button">
+  <button className="boy-section-button font-semibold md:font-bold">
     Contact Us
     <img src={rightArrow} alt="Right Arrow" />
   </button>
