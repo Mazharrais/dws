@@ -74,6 +74,9 @@
   border-radius: 8px;
   cursor: pointer;
 }
+.sliderrrrr {
+  display: none !important;
+}
 
 /* Default state - arrows hidden */
 .slick-prev,
