@@ -87,8 +87,8 @@ const BlackSection = () => {
       {/* Grid layout for the containers */}
       <div className="py-8 px-4 sm:px-4 lg:px-24 flex justify-center">
         {/* Slider for Small Screens */}
-        <div className=" grid grid-cols-1 gap-2 sliderrrrr">
-          <Slider {...settings}>
+        <div className=" grid grid-cols-1 gap-2 ">
+          <Slider {...settings} className='sliderrrrr'>
             {[rideApp, shoeEcom, healthApp, logisApp, entertain, walletApp].map((image, index) => {
               const bgColor =
                 index === 0
