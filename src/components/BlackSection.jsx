@@ -8,6 +8,7 @@ import healthApp from '../assets/Rectangle 11 (2).png';
 import logisApp from '../assets/Rectangle 11 (5).png';
 import entertain from '../assets/Rectangle 11 (4).png';
 import walletApp from '../assets/Rectangle 11 (3).png';
+import "./BlackSection.css"
 
 const BlackSection = () => {
   const [selectedButton, setSelectedButton] = useState('Applications');
@@ -86,7 +87,7 @@ const BlackSection = () => {
       {/* Grid layout for the containers */}
       <div className="py-8 px-4 sm:px-4 lg:px-24 flex justify-center">
         {/* Slider for Small Screens */}
-        <div className="block sm:hidden grid grid-cols-1 gap-2">
+        <div className=" grid grid-cols-1 gap-2">
           <Slider {...settings}>
             {[rideApp, shoeEcom, healthApp, logisApp, entertain, walletApp].map((image, index) => {
               const bgColor =

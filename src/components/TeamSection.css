@@ -59,7 +59,7 @@
   }
   .slick-slider {
     width: 100%;
-    overflow: hidden; /* Prevent extra space during slide */
+    /* overflow: hidden; Prevent extra space during slide */
   }
 
   .slick-list {
