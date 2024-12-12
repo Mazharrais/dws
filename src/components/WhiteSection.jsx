@@ -121,19 +121,22 @@ import carImage from '../assets/ttt 1.png';
 import websiteIcon from '../assets/blackLaptop.png';
 import mobileIcon from '../assets/Group 102.png';
 import graphicIcon from '../assets/Group 103.png';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Importing icons from react-icons
 import './WhiteSection.css';
 
 const WhiteSection = () => {
   const [activeSection, setActiveSection] = useState(0); // 0: Website, 1: Mobile, 2: Graphic Designing
+  const [activeButton, setActiveButton] = useState(''); // Tracks which button is active
 
   const handleArrowClick = (direction) => {
+    setActiveButton(direction); // Update active button state
+
     if (direction === 'right') {
       setActiveSection((prev) => (prev + 1) % 3); // Moves right: 0 -> 1 -> 2 -> 0
     } else if (direction === 'left') {
       setActiveSection((prev) => (prev - 1 + 3) % 3); // Moves left: 0 -> 2 -> 1 -> 0
     }
   };
-
   return (
     <div
       id="services"
@@ -159,20 +162,31 @@ const WhiteSection = () => {
             </p>
 
             {/* Buttons */}
-            <div className="buttons">
-              <button
-                className="button border-2 border-[#111111] bg-white hover:bg-[#111111] hover:text-white"
-                onClick={() => handleArrowClick('left')}
-              >
-                <img src={leftArrow} alt="Left Arrow" className="w-4 h-4" />
-              </button>
-              <button
-                className="button bg-[#111111] text-white hover:bg-white hover:text-[#111111]"
-                onClick={() => handleArrowClick('right')}
-              >
-                <img src={rightArrow} alt="Right Arrow" className="w-4 h-4" />
-              </button>
-            </div>
+            <div className="buttons flex space-x-2">
+      {/* Left Button */}
+      <button
+        className={`button border-2 border-[#111111] flex items-center justify-center ${
+          activeButton === 'left' ? 'bg-[#111111] text-white' : 'bg-white hover:bg-[#111111] hover:text-white'
+        }`}
+        onClick={() => handleArrowClick('left')}
+      >
+        <FaArrowLeft
+          className={`w-4 h-4 ${activeButton === 'left' ? 'text-white' : 'text-[#111111]'}`}
+        />
+      </button>
+
+      {/* Right Button */}
+      <button
+        className={`button border-2 border-[#111111] flex items-center justify-center ${
+          activeButton === 'right' ? 'bg-[#111111] text-white' : 'bg-white hover:bg-[#111111] hover:text-white'
+        }`}
+        onClick={() => handleArrowClick('right')}
+      >
+        <FaArrowRight
+          className={`w-4 h-4 ${activeButton === 'right' ? 'text-white' : 'text-[#111111]'}`}
+        />
+      </button>
+    </div>
           </div>
 
           {/* Blue Section with Square Containers */}

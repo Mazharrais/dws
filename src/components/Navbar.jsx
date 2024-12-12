@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex font-semibold gap-4 text-[12px] text-[13px] space-x-1">
-          <Link to="home" smooth={true} duration={500} className="hover:text-gray-700 text-[#A39898] cursor-pointer">
+          <Link to="home" smooth={true} duration={500} className="hover:text-gray-700 text-[#111111] cursor-pointer">
             Home
           </Link>
           <Link to="about" smooth={true} duration={500} className="hover:text-gray-700 text-[#A39898] cursor-pointer">
@@ -98,25 +98,25 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white text-black text-center space-y-3 p-2">
-          <Link to="home" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="home" className="block py-2 hover:text-gray-700 font-bold rounded-md  bg-zinc-400 cursor-pointer">
             Home
           </Link>
-          <Link to="about" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="about" className="block py-2 hover:text-gray-700 font-bold cursor-pointer">
             About Us
           </Link>
-          <Link to="services" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="services" className="block py-2 hover:text-gray-700 font-semibold cursor-pointer">
             Services
           </Link>
-          <Link to="tech" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="tech" className="block py-2 hover:text-gray-700 font-semibold cursor-pointer">
             Technologies
           </Link>
-          <Link to="contact" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="contact" className="block py-2 hover:text-gray-700 font-semibold cursor-pointer">
             Contact Us
           </Link>
-          <Link to="#" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="#" className="block py-2 hover:text-gray-700 font-semibold cursor-pointer">
             Get a Quote
           </Link>
-          <Link to="#" className="block py-2 hover:text-gray-700 cursor-pointer">
+          <Link to="#" className="block py-2 hover:text-gray-700 font-semibold cursor-pointer">
             More
           </Link>
         </div>

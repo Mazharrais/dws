@@ -45,10 +45,10 @@ const Blackbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Social Icons */}
         <div className="flex ml-[10rem] space-x-3">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/deskworksol/" target="_blank" rel="noopener noreferrer">
             <img src={instagramIcon} alt="Instagram" className="w-3.5 h-3.5 hover:opacity-80 transition-opacity" />
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/deskworksol/" target="_blank" rel="noopener noreferrer">
             <img src={facebookIcon} alt="Facebook" className="w-3.5 h-3.5 hover:opacity-80 transition-opacity" />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">

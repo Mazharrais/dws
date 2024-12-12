@@ -316,17 +316,40 @@ const BlackFooter = () => {
         </h2>
         <div className={`section-content ${showContact ? 'block' : ''}`}>
           <div className="contact-call " alt="Callnow :">
-            
+
             <p>Callnow : +1 234 529-786</p>
           </div>
           <div className="contact-call " alt="Emailnow :">
-            
+
             <p>Email : info@deskworksol.com</p>
           </div>
           <div className="contact-call " alt="Address :">
-            
-            <p>Address : Gulshan-e-Jamal Rashid Minhas Road <br/> Near Kia Motors Cantonment <br/> Shopping Mall 3rd Floor Office #30</p>
+
+            <p>Address : Gulshan-e-Jamal Rashid <br /> Minhas Road  Near Kia Motors Cantonment <br /> Shopping Mall  3rd Floor Office #30</p>
           </div>
+
+          <div>
+  <p style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+    Social Media:
+    <a href="https://www.facebook.com/deskworksol/" target="_blank" rel="noopener noreferrer">
+      <img src={facebook} alt="Facebook" style={{ width: '15px', height: '15px' }} />
+    </a>
+    <a href="https://www.instagram.com/deskworksol/" target="_blank" rel="noopener noreferrer">
+      <img src={instagram} alt="Instagram" style={{ width: '15px', height: '15px' }} />
+    </a>
+    <a href="https://www.linkedin.com/company/deskworksol/" target="_blank" rel="noopener noreferrer">
+      <img src={linkedIn} alt="LinkedIn" style={{ width: '15px', height: '15px' }} />
+    </a>
+    <a href="https://www.youtube.com/@deskworksol9386" target="_blank" rel="noopener noreferrer">
+      <img src={youtube} alt="YouTube" style={{ width: '15px', height: '15px' }} />
+    </a>
+  </p>
+</div>
+
+
+
+
+
 
 
 
@@ -335,24 +358,33 @@ const BlackFooter = () => {
             <img className="contact-icon" src={whatsapp} alt="WhatsApp" />
             <p>+1 234 529-786</p>
           </div> */}
-          <div className="contact-item">
-            <img className="contact-icon" src={facebook} alt="Facebook" />
-            <p>/deskWorkSol</p>
-          </div>
-          <div className="contact-item">
+          {/* <div className="contact-item">
             <img className="contact-icon" src={youtube} alt="YouTube" />
             <p>/deskWorkSol</p>
-          </div>
-          <div className="contact-item">
-            <img className="contact-icon" src={linkedIn} alt="LinkedIn" />
-            <p>/deskWorkSol</p>
-          </div>
-          <div className="contact-item">
-            <img className="contact-icon" src={instagram} alt="Instagram" />
-            <p>/deskWorkSol</p>
-          </div>
+          </div> */}
         </div>
       </div>
+
+      {/*  Social Media section */}
+
+      {/* <div className="social-container">
+  <p className="social-title">Social Media:</p>
+  <div className="social-icons">
+    <img src={facebook} alt="Facebook" className="icon" />
+    <img src={instagram} alt="Instagram" className="icon" />
+    <img src={linkedIn} alt="LinkedIn" className="icon" />
+  </div>
+</div> */}
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

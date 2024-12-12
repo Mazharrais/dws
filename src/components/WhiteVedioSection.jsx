@@ -63,9 +63,13 @@ const WhiteVedioSection = () => {
         </div>
         {/* Laptop Image */}
         <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
+
+          // initial={{opacity: 0, x: 70}}
+          // whileInView={{opacity: 12, x: 10}}
+          // transition={{duration : 1}}
 
           className="flex justify-center    md:w-1/2 mt-8 md:mt-0 sm:display hidden md:block ">
           <img
